@@ -3,7 +3,9 @@
   hosts: local
   become: true
   - tasks:
-    import_role: java
+    import_role:
+      name: java
 
   - tasks:
-    import_role: jenkins
+    import_role:
+      name: jenkins
