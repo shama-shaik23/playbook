@@ -1,0 +1,9 @@
+---
+- name: Install java and jenkins on local machine
+  hosts: local
+  become: true
+  - tasks:
+    import_role: java
+
+  - tasks:
+    import_role: jenkins
